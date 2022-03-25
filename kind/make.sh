@@ -64,6 +64,6 @@ HOSTS=$(kubectl -n redpanda get svc -o json | jq -r '.items[] | select(.status.l
 echo "$HOSTS"
 BROKERS=$(echo "$HOSTS" | awk '{print $2":9092"}' | paste -s -d, -)
 echo "
-rpk api status --brokers $BROKERS
+rpk cluster metadata --brokers $BROKERS
 "
-rpk api status --brokers "$BROKERS" || true
+rpk cluster metadata --brokers "$BROKERS" || true

@@ -48,6 +48,7 @@ config:
       # The port for the admin server.
       #
       # Metrics are served off of this port at /metrics.
+      address: 0.0.0.0
       port: 9644
     kafka_api:
       - name: internal
@@ -56,6 +57,7 @@ config:
         port: 9092
     rpc_server:
       # The port for the internal RPC server.
+      address: 0.0.0.0
       port: 33145
 
   rpk:
