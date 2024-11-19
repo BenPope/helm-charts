@@ -1,17 +1,6 @@
 # OLD REPO: Please use the official k8s operator
 
-
-
-```
-
-# new k8s operator tree.
-
-
-https://github.com/vectorizedio/redpanda/tree/dev/src/go/k8s
-
-
-
-```
+https://docs.redpanda.com/current/deploy/deployment-option/self-hosted/kubernetes/
 
 > NOTE: This is no longer supported.
 > 
